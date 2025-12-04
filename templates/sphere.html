@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sphere Volume</title>
+</head>
+<body>
+    <h1>Sphere Volume</h1>
+
+    <form action="/sphere" method="post">
+        <label>Radius:</label>
+        <input type="number" step="0.1" name="rad" required>
+        <button type="submit">Calculate</button>
+    </form>
+
+    {% if volume %}
+        <h2>Result: {{ volume }}</h2>
+    {% endif %}
+
+    <a href="/">Home</a>
+</body>
+</html>
